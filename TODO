@@ -1,0 +1,28 @@
+  $Id: TODO 451 2009-02-20 12:05:00Z aff $
+
+- Create output classes for each RDBMS:
+
+    Dia::SQL::Output::DB2
+    Dia::SQL::Output::Oracle
+    Dia::SQL::Output::MyISAM
+    Dia::SQL::Output::InnoDB
+
+    DB/2, Informix, Ingres, MSSQL, MySQL, Oracle, Postgres, Sybase,
+    InnoDB, and SAS
+
+- Download DDL's from http://tedia2sql.tigris.org/ and
+  ensure Dia::SQL produces roughly the same code.
+
+- Add a formatter to the table statements (e.g. Text::Table)
+
+- Test with larger dia files.
+
+- Optimize with Devel::DProf, and consider a faster XML parser.
+
+- Be consistent in subroutine names (e.g. Output.pm)
+  E.g. get_<dbobject>_<(create|drop)>_sql
+
+- Apply stricter Perl::Critic (current level 'stern', consider
+  'harsh').
+
+- Clean up pod (use =item and =cut for subroutines) in all modules.
